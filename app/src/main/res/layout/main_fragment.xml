@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="by ElTlaloque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:padding="40dp"
+        android:src="@drawable/title3"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="40dp"
+        android:background="@android:drawable/btn_default"
+        android:drawableLeft="@drawable/green2hd"
+        android:elevation="1dp"
+        android:paddingVertical="12dp"
+        android:paddingStart="12dp"
+        android:text="Easy"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="60dp" />
+
+    <ImageView
+        android:id="@+id/easyButtonImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:elevation="2dp"
+        android:padding="12dp"
+        android:src="@drawable/greenhd"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/easyButton"
+        app:layout_constraintStart_toStartOf="@+id/easyButton"
+        app:layout_constraintTop_toTopOf="@+id/easyButton" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="40dp"
+        android:background="@android:drawable/btn_default"
+        android:drawableLeft="@drawable/yellow2hd"
+        android:elevation="1dp"
+        android:paddingVertical="12dp"
+        android:paddingStart="12dp"
+        android:text="Medium"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/easyButton"
+        tools:layout_editor_absoluteX="60dp" />
+
+    <ImageView
+        android:id="@+id/mediumButtonImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:elevation="2dp"
+        android:padding="12dp"
+        android:src="@drawable/yellowhd"
+        app:layout_constraintBottom_toBottomOf="@+id/mediumButton"
+        app:layout_constraintStart_toStartOf="@+id/mediumButton"
+        app:layout_constraintTop_toTopOf="@+id/mediumButton" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="40dp"
+        android:background="@android:drawable/btn_default"
+        android:drawableLeft="@drawable/red2hd"
+        android:elevation="1dp"
+        android:paddingVertical="12dp"
+        android:paddingStart="12dp"
+        android:text="Hard"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/mediumButton"
+        tools:layout_editor_absoluteX="60dp" />
+
+    <ImageView
+        android:id="@+id/hardButtonImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:elevation="2dp"
+        android:padding="12dp"
+        android:src="@drawable/redhd"
+        app:layout_constraintBottom_toBottomOf="@+id/hardButton"
+        app:layout_constraintStart_toStartOf="@+id/hardButton"
+        app:layout_constraintTop_toTopOf="@+id/hardButton" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="@+id/hardButton"
+        app:layout_constraintTop_toBottomOf="@+id/hardButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
